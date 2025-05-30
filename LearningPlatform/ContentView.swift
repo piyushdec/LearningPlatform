@@ -6,11 +6,10 @@
 //
 
 import SwiftUI
-import FeatureAUI
-import FeatureAModels
 import FeatureAServices
-import FeatureBModels
 import FeatureBServices
+import FeatureCServices
+import FeatureAUI
 import FeatureBUI
 
 struct ContentView: View {
@@ -20,9 +19,14 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+          CourseView()
+          CurriculaView()
         }
         .padding()
         .task {
+          let courseService = CourseService()
+          let currService = CurriculaService()
+          let achievementService = AchievementService()
         }
     }
 }
