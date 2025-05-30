@@ -1,21 +1,37 @@
 // swift-tools-version: 6.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
+// Features/FeatureA/Package.swift
+
 import PackageDescription
 
 let package = Package(
-    name: "FeatureA",
-    products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "FeatureA",
-            targets: ["FeatureA"]),
-    ],
-    targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "FeatureA"),
-
-    ]
+  name: "FeatureA",
+  platforms: [
+    .iOS(.v15)
+  ],
+  products: [
+    .library(name: "FeatureAModels", targets: ["FeatureAModels"]),
+    .library(name: "FeatureAServices", targets: ["FeatureAServices"]),
+    .library(name: "FeatureAUI", targets: ["FeatureAUI"])
+  ],
+  dependencies: [
+    // add other local/remote packages here
+  ],
+  targets: [
+    .target(
+      name: "FeatureAModels",
+      path: "Sources/Models"
+    ),
+    .target(
+      name: "FeatureAServices",
+      dependencies: ["FeatureAModels"],
+      path: "Sources/Services"
+    ),
+    .target(
+      name: "FeatureAUI",
+      dependencies: ["FeatureAModels" , "FeatureAServices"],
+      path: "Sources/UI"
+    )
+  ]
 )

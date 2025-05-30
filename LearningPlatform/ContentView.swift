@@ -6,7 +6,12 @@
 //
 
 import SwiftUI
-import FeatureA
+import FeatureAUI
+import FeatureAModels
+import FeatureAServices
+import FeatureBModels
+import FeatureBServices
+import FeatureBUI
 
 struct ContentView: View {
     var body: some View {
@@ -17,6 +22,8 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .task {
+        }
     }
 }
 

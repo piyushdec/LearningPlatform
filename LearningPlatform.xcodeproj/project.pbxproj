@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BBE2ED42DE90B54007C54D7 /* FeatureA in Frameworks */ = {isa = PBXBuildFile; productRef = 4BBE2ED32DE90B54007C54D7 /* FeatureA */; };
-		4BBE2ED82DE90BF6007C54D7 /* FeatureA in Frameworks */ = {isa = PBXBuildFile; productRef = 4BBE2ED72DE90BF6007C54D7 /* FeatureA */; };
+		4BC116EF2DE95FEF004EFD60 /* FeatureAModels in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC116D82DE9552B004EFD60 /* FeatureAModels */; };
+		4BC116F02DE95FEF004EFD60 /* FeatureAServices in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC116DE2DE95D73004EFD60 /* FeatureAServices */; };
+		4BC116F12DE95FEF004EFD60 /* FeatureAUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC116E02DE95D73004EFD60 /* FeatureAUI */; };
+		4BC116FC2DE96D74004EFD60 /* FeatureBModels in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC116FB2DE96D74004EFD60 /* FeatureBModels */; };
+		4BC116FE2DE96D74004EFD60 /* FeatureBServices in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC116FD2DE96D74004EFD60 /* FeatureBServices */; };
+		4BC117002DE96D74004EFD60 /* FeatureBUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC116FF2DE96D74004EFD60 /* FeatureBUI */; };
+		4BC1170F2DE97B2C004EFD60 /* FeatureCServices in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC1170E2DE97B2C004EFD60 /* FeatureCServices */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4BBE2E662DE8FFC3007C54D7 /* LearningPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BBE2ED52DE90BC6007C54D7 /* FeatureA */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FeatureA; path = Features/FeatureA; sourceTree = "<group>"; };
+		4BC116D02DE91BE6004EFD60 /* FeatureB */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FeatureB; path = Features/FeatureB; sourceTree = "<group>"; };
+		4BC1170A2DE97A94004EFD60 /* FeatureC */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FeatureC; path = Features/FeatureC; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -29,8 +36,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BBE2ED42DE90B54007C54D7 /* FeatureA in Frameworks */,
-				4BBE2ED82DE90BF6007C54D7 /* FeatureA in Frameworks */,
+				4BC116FC2DE96D74004EFD60 /* FeatureBModels in Frameworks */,
+				4BC116F12DE95FEF004EFD60 /* FeatureAUI in Frameworks */,
+				4BC116F02DE95FEF004EFD60 /* FeatureAServices in Frameworks */,
+				4BC1170F2DE97B2C004EFD60 /* FeatureCServices in Frameworks */,
+				4BC116FE2DE96D74004EFD60 /* FeatureBServices in Frameworks */,
+				4BC117002DE96D74004EFD60 /* FeatureBUI in Frameworks */,
+				4BC116EF2DE95FEF004EFD60 /* FeatureAModels in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +53,10 @@
 			isa = PBXGroup;
 			children = (
 				4BBE2ED52DE90BC6007C54D7 /* FeatureA */,
+				4BC116D02DE91BE6004EFD60 /* FeatureB */,
+				4BC1170A2DE97A94004EFD60 /* FeatureC */,
 				4BBE2E682DE8FFC3007C54D7 /* LearningPlatform */,
+				4BC116CD2DE91AE6004EFD60 /* Frameworks */,
 				4BBE2E672DE8FFC3007C54D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +67,13 @@
 				4BBE2E662DE8FFC3007C54D7 /* LearningPlatform.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4BC116CD2DE91AE6004EFD60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,8 +96,13 @@
 			);
 			name = LearningPlatform;
 			packageProductDependencies = (
-				4BBE2ED32DE90B54007C54D7 /* FeatureA */,
-				4BBE2ED72DE90BF6007C54D7 /* FeatureA */,
+				4BC116D82DE9552B004EFD60 /* FeatureAModels */,
+				4BC116DE2DE95D73004EFD60 /* FeatureAServices */,
+				4BC116E02DE95D73004EFD60 /* FeatureAUI */,
+				4BC116FB2DE96D74004EFD60 /* FeatureBModels */,
+				4BC116FD2DE96D74004EFD60 /* FeatureBServices */,
+				4BC116FF2DE96D74004EFD60 /* FeatureBUI */,
+				4BC1170E2DE97B2C004EFD60 /* FeatureCServices */,
 			);
 			productName = LearningPlatform;
 			productReference = 4BBE2E662DE8FFC3007C54D7 /* LearningPlatform.app */;
@@ -107,6 +134,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				4BBE2ED62DE90BF6007C54D7 /* XCLocalSwiftPackageReference "Features/FeatureA" */,
+				4BC116D12DE91BF9004EFD60 /* XCLocalSwiftPackageReference "Features/FeatureB" */,
+				4BC1170B2DE97AA0004EFD60 /* XCLocalSwiftPackageReference "Features/FeatureC" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4BBE2E672DE8FFC3007C54D7 /* Products */;
@@ -344,16 +373,46 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Features/FeatureA;
 		};
+		4BC116D12DE91BF9004EFD60 /* XCLocalSwiftPackageReference "Features/FeatureB" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Features/FeatureB;
+		};
+		4BC1170B2DE97AA0004EFD60 /* XCLocalSwiftPackageReference "Features/FeatureC" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Features/FeatureC;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4BBE2ED32DE90B54007C54D7 /* FeatureA */ = {
+		4BC116D82DE9552B004EFD60 /* FeatureAModels */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = FeatureA;
+			productName = FeatureAModels;
 		};
-		4BBE2ED72DE90BF6007C54D7 /* FeatureA */ = {
+		4BC116DE2DE95D73004EFD60 /* FeatureAServices */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = FeatureA;
+			package = 4BBE2ED62DE90BF6007C54D7 /* XCLocalSwiftPackageReference "Features/FeatureA" */;
+			productName = FeatureAServices;
+		};
+		4BC116E02DE95D73004EFD60 /* FeatureAUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BBE2ED62DE90BF6007C54D7 /* XCLocalSwiftPackageReference "Features/FeatureA" */;
+			productName = FeatureAUI;
+		};
+		4BC116FB2DE96D74004EFD60 /* FeatureBModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureBModels;
+		};
+		4BC116FD2DE96D74004EFD60 /* FeatureBServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureBServices;
+		};
+		4BC116FF2DE96D74004EFD60 /* FeatureBUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureBUI;
+		};
+		4BC1170E2DE97B2C004EFD60 /* FeatureCServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureCServices;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

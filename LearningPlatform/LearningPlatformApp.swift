@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import FeatureAUI
 
 @main
 struct LearningPlatformApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+           CourseView()
         }
     }
 }
